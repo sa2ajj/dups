@@ -13,7 +13,7 @@ main([_ | _]=Dirs) ->
                       end,
                       dict:new(),
                       pmap(fun(Dir) ->
-                            filelib:fold_files(Dir, "^.*$", true,
+                            filelib:fold_files(Dir, ".*", true,
                                                fun(FileName, Dict) -> dict:append(sum(FileName), FileName, Dict) end,
                                                dict:new())
                            end, Dirs)),
