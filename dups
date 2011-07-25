@@ -4,8 +4,6 @@
 
 main([_ | _]=Dirs) ->
     application:start(crypto),
-    io:format("Dirs: ~p\n", [Dirs]),
-    % use this form to overcome escript limitation (??)
     Map = lists:foldl(fun (AMap, Acc) ->
                         dict:merge(fun (_, Value1, Value2) ->
                                     Value1 ++ Value2
