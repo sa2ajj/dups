@@ -9,7 +9,7 @@ directories.
 ``dups``
     Implementation in Erlang
 
-Two files are considered "same" if there SHA-1 sum (regardless the size) are
+Two files are considered "same" if their SHA-1 sum (regardless the size) are
 the same.
 
 The only difference between the versions is that since Erlang supports very
