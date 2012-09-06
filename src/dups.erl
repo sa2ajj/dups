@@ -1,4 +1,8 @@
-#! /usr/bin/escript
+-module(dups).
+
+-export([
+    main/1
+]).
 
 -define(BLOCK_SIZE, 128*1024).
 
